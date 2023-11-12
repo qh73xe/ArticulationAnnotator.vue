@@ -2,11 +2,35 @@
   "name": "articulationannotator-vue",
   "private": true,
   "version": "0.0.0",
+  "license": "MIT",
+  "author": "qh73xe <takuya.waseda.1119@gmail.com>",
+  "description": "Annotation tool for articulation points in speech",
+  "homepage": "https://github.com/qh73xe/ArticulationAnnotator.vue",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:qh73xe/ArticulationAnnotator.vue.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/articulationannotator.vue.lib.umd.cjs",
+  "module": "./dist/articulationannotator.vue.lib.js",
+  "types": "./dist/main.d.ts",
+  "keywords": [
+    "Vue",
+    "Vue.js",
+    "articulation",
+    "image",
+    "edtor",
+    "canvas",
+    "video"
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
+    "lint": "eslint --ext .vue,.ts src/",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -21,12 +45,23 @@
     "@storybook/testing-library": "^0.2.2",
     "@storybook/vue3": "^7.5.3",
     "@storybook/vue3-vite": "^7.5.3",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
     "@vitejs/plugin-vue": "^4.2.3",
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "eslint": "^8.53.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-storybook": "^0.6.15",
+    "eslint-plugin-vue": "^9.18.1",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.5.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
+    "vite-plugin-checker": "^0.6.2",
+    "vite-plugin-dts": "^3.6.3",
     "vue-tsc": "^1.8.5"
   }
 }
