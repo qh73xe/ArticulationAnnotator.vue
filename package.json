@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "lint": "eslint ./src/**/*.{ts,vue}",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "gen:component": "hygen component new"
   },
   "dependencies": {
     "vue": "^3.3.4",

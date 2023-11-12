@@ -1,5 +1,10 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import type { App } from 'vue';
+import '@mdi/font/css/materialdesignicons.css';
+import 'vuetify/styles';
 
-createApp(App).mount('#app')
+import AVideo from './components/video/AVideo.vue';
+export default {
+  install(app: App) {
+    app.component('AVideo', AVideo);
+  },
+};
