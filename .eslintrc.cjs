@@ -5,12 +5,11 @@ module.exports = {
   },
   extends: ['plugin:vue/vue3-essential', 'plugin:storybook/recommended'],
   parserOptions: {
-    parser: '@typescript-eslint/parser',
     ecmaVersion: 'latest',
+    parser: '@typescript-eslint/parser',
     sourceType: 'module',
-    extraFileExtensions: ['.vue', '.ts']
   },
-  plugins: ['vue', '@typescript-eslint'],
+  plugins: ['vue', '@typescript-eslint' ],
   rules: {
     'object-curly-newline': [
       'error',
@@ -18,10 +17,7 @@ module.exports = {
         ObjectExpression: { multiline: true },
         ObjectPattern: { multiline: true },
         ImportDeclaration: { multiline: true },
-        ExportDeclaration: {
-          multiline: true,
-          minProperties: 3,
-        },
+        ExportDeclaration: { multiline: true, minProperties: 3 },
       },
     ],
     'func-call-spacing': 'off', // Fix for 'defineEmits'

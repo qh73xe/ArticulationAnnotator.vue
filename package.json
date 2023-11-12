@@ -2,42 +2,21 @@
   "name": "articulationannotator-vue",
   "private": true,
   "version": "0.0.0",
-  "license": "MIT",
-  "author": "qh73xe <takuya.waseda.1119@gmail.com>",
-  "description": "Annotation tool for articulation points in speech",
-  "homepage": "https://github.com/qh73xe/ArticulationAnnotator.vue",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:qh73xe/ArticulationAnnotator.vue.git"
-  },
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/articulationannotator.vue.lib.umd.cjs",
-  "module": "./dist/articulationannotator.vue.lib.js",
-  "types": "./dist/main.d.ts",
-  "keywords": [
-    "Vue",
-    "Vue.js",
-    "articulation",
-    "image",
-    "edtor",
-    "canvas",
-    "video"
-  ],
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint --ext .vue,.ts src/",
+    "lint": "eslint ./src/**/*.{ts,vue}",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "vuetify": "^3.4.0"
   },
   "devDependencies": {
+    "@mdi/font": "^7.3.67",
     "@storybook/addon-essentials": "^7.5.3",
     "@storybook/addon-interactions": "^7.5.3",
     "@storybook/addon-links": "^7.5.3",

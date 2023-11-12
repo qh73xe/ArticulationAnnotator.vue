@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
 
-import Button from './Button.vue';
+import SButton from './SButton.vue';
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
 const meta = {
@@ -14,7 +14,7 @@ const meta = {
     onClick: { action: 'clicked' },
   },
   args: { primary: false }, // default value
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof SButton>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

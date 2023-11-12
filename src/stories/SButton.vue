@@ -37,9 +37,7 @@ const classes = computed(() => ({
   [`storybook-button--${props.size || 'medium'}`]: true,
 }));
 
-const style = computed(() => ({
-  backgroundColor: props.backgroundColor
-}));
+const style = computed(() => ({backgroundColor: props.backgroundColor}));
 
 const onClick = () => {
   emit("click", 1)
